@@ -1,0 +1,21 @@
+
+Sample that renders the templates in the values.
+
+#####################################
+# Dumping original values
+#####################################
+{{ .Values | toYaml }}
+#####################################
+
+
+# Rendering values
+{{- include "recursion2.valueTemplateRenderer" . }}
+
+
+#####################################
+# Dumping rendered values
+#####################################
+{{ .ValuesRendered | toYaml }}
+#####################################
+
+

@@ -1,0 +1,6 @@
+This app is just a sample demo that show that backward incomatible behaviour related to recursive templates in helm 3.0.0  vs helm 3.0.2++
+
+In this use-case the recursion is used to validate parts of the chart.
+   The SCH chart validates that the content of values-metadata does not have empty / nill entries.
+{{- include "sch.config.init" (list . "recursion.assistant.sch.chart.config.values") -}}
+

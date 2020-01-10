@@ -1,0 +1,12 @@
+global:
+  image:
+    repository: hub.docker.com
+
+image:
+  repository: '{{ tpl .Values.global.image.repository . }}'
+
+initContainers:
+  dep1Ready:
+    image:
+      repository: '{{ tpl .Values.global.image.repository . }}'
+ 

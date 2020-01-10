@@ -1,0 +1,19 @@
+global:
+  __metadata:
+    label: "Global Configuration"
+    description: "Shared configuration influencing multiple subchart"
+  image:
+    repository:
+      __metadata:
+        label: "Repository where all images are pulled from"
+        description: "Docker Repository and namespace Assistant chart pulls images."
+
+image:
+  repository:
+      __metadata:
+        label: "Repository"
+        description: "Docker Repository"
+
+# Uncomment to get failure even on helm ne below to fail the ibm-sch chart validation of metadata (even on helm 2 or helm 3.0.0)
+#emptyDict:
+

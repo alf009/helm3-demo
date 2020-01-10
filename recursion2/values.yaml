@@ -1,0 +1,19 @@
+
+
+# Global configuration inherited e.g., from parrent chart
+global:
+  image:
+    repository: hub.docker.com
+    pullPolicy: IfNotPresent
+    
+
+
+
+
+image:
+  repository: '{{ .Values.global.image.repository }}'
+  image:      "postgres"
+  tag:        "latest"
+  pullPolicy: '{{ .Values.global.image.pullPolicy }}'
+
+

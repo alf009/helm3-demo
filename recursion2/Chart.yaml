@@ -1,0 +1,10 @@
+apiVersion: v2
+name: recursion2
+description: |
+  This chart is using recursive template to process values and apply tpl function to all of them to get "computed" values (i.e., to overcome some inabilities of the way helm handles values). 
+  Computed values are very usefull if you want to share values among siblink sub-charts, ....
+
+type: application
+
+version: 0.1.0
+appVersion: 1.16.0
